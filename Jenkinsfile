@@ -2,7 +2,7 @@ pipeline{
   agent any
   stages{
     when{
-     branch "developed"
+     branch "develop"
     }
     stage("Hello"){
       steps{
