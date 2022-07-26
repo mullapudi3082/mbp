@@ -1,10 +1,10 @@
 pipeline{
   agent any
   stages{
-    when{
+     stage("Hello"){
+       when{
      branch "develop"
     }
-    stage("Hello"){
       steps{
       echo "This is multibranch pipeline code"
       }
